@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://getbootstrap.com/examples/sticky-footer-navbar/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Portegrity Assignment</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../static/pro_files/ie-emulation-modes-warning.js"></script>
+
+
+    <script src="../static/pro_files/jquery.min.js"></script>
+    <script src="../static/pro_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/pro_files/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style type="text/css">.crossrider-nofity-58582 {
+	display:none;
+}
+
+.crossrider-nofity-58582-top-left {
+	font-size:0px;
+	position:fixed;
+	top:10px;
+	left:10px;
+	z-index:2147483647;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-top-right {
+	font-size:0px;
+	position:fixed;
+	top:10px;
+	right:10px;
+	z-index:2147483647;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-bottom-left {
+	font-size:0px;
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	z-index:2147483647;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-bottom-right {
+	font-size:0px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	z-index:2147483647;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-ntf {
+	position:relative;
+	zoom:1;
+	overflow: visible;
+	display:none;
+}
+
+.crossrider-nofity-58582-iframe {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:transparent;
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	z-index:-1;
+}
+
+/************************************************************/
+/********************* default theme ***********************/
+/************************************************************/
+.crossrider-nofity-58582-ntf-content-theme-default,
+.crossrider-nofity-58582-ntf-content-theme-default * {
+		color:#fff;
+}
+
+.crossrider-nofity-58582-ntf-content-theme-default {
+	position:relative;
+	direction:ltr;
+	text-align:left;
+	zoom:1;
+	padding:10px;
+	font-family:Helvtica, Arial, sans-serif;
+	font-size:14px;
+	background:#252525;
+	background:rgba(0,0,0,0.855);
+	*background:#252525; /* IE 7 Hack */
+	border: 2px solid #fdfdfd;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+    -webkit-box-shadow:0 0 10px #000;
+    -moz-box-shadow:0 0 10px #000;
+	box-shadow:10 0 10px #000;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-header-theme-default {
+	width:auto;
+}
+	
+	.crossrider-nofity-58582-icon-theme-default {
+		float:left;
+		width:50px;
+		height:50px;
+		margin-right:10px;
+		margin-bottom:10px;
+	}
+
+	.crossrider-nofity-58582-qmark-theme-default {
+		float:left;
+		width:16px;
+		height:16px;
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/question-mark.gif');
+		margin-right:6px;
+	}
+	
+	.crossrider-nofity-58582-title-theme-default {
+		height:20px;
+		font-weight:bold;
+		width:auto;
+		font-size:14px;
+		font-weight:bold;
+		text-shadow:1px 1px #000;
+	}
+	
+	.crossrider-nofity-58582-close-theme-default {
+		position:absolute;
+		right:-13px;
+		top:-10px;
+		width:33px;
+		height:30px;
+		font-weight:bold;
+		font-size:0px;
+		cursor:pointer;
+		line-height:12px;
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/default/close.png');
+	}
+
+.crossrider-nofity-58582-body-theme-default {
+	clear:both;
+	margin-top:4px;
+	min-height:50px;
+	font-size:12px;
+}
+
+.crossrider-nofity-58582-tooltip-theme-default {
+	display:none;
+	position:absolute;
+	background:#F2F2F2;
+	border:2px solid #848484;
+	padding:8px;
+	width:80%;
+	top:0px;
+	left:0px;
+	color:#666;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	cursor:default;
+}
+
+	.crossrider-nofity-58582-tooltip-theme-default button {
+		float:right;
+		cursor:pointer;
+	}
+
+/************************************************************/
+/********************* facebook theme ***********************/
+/************************************************************/
+.crossrider-nofity-58582-ntf-content-theme-facebook,
+.crossrider-nofity-58582-ntf-content-theme-facebook * {
+	color:#666;	
+}
+
+.crossrider-nofity-58582-ntf-content-theme-facebook {
+	position:relative;
+	direction:ltr;
+	text-align:left;
+	background:rgb(82, 82, 82);
+	background:rgba(82, 82, 82, 0.7);
+	zoom:1;
+	padding:4px;
+	font-family:Helvtica, Arial, sans-serif;
+	font-size:14px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-header-theme-facebook {
+	width:auto;
+	background:#F2F2F2;
+	border:1px solid #555555;
+	border-bottom:none;
+}
+	
+	.crossrider-nofity-58582-icon-theme-facebook {
+		float:left;
+		width:50px;
+		height:50px;
+		margin-right:10px;
+		margin-bottom:10px;
+	}
+
+	.crossrider-nofity-58582-qmark-theme-facebook {
+		float:left;
+		width:16px;
+		height:16px;
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/question-mark.gif');
+		margin:6px 6px 0px 6px;
+	}
+	
+	.crossrider-nofity-58582-title-theme-facebook {
+		height:20px;
+		font-weight:bold;
+		font-size:15px;
+		width:auto;
+		margin-left:10px;
+		padding-bottom:6px;
+		padding-top:6px;
+		color:#666;
+	}
+	
+	.crossrider-nofity-58582-close-theme-facebook {
+		position:absolute;
+		right:-13px;
+		top:-7px;
+		width:33px;
+		height:30px;
+		font-weight:bold;
+		font-size:0px;
+		cursor:pointer;
+		line-height:12px;
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/facebook/close.png');
+	}
+
+.crossrider-nofity-58582-body-theme-facebook {
+	clear:both;
+	padding:10px;
+	padding-top:6px;
+	min-height:50px;
+	background:#FFF;
+	border:1px solid #555555;
+	border-top:1px solid #CCCCCC;
+}
+
+.crossrider-nofity-58582-tooltip-theme-facebook {
+	display:none;
+	position:absolute;
+	background:#F2F2F2;
+	border:2px solid #848484;
+	padding:8px;
+	width:80%;
+	top:0px;
+	left:0px;
+	color:#666;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	cursor:default;
+}
+
+	.crossrider-nofity-58582-tooltip-theme-facebook button {
+		float:right;
+		cursor:pointer;
+	}
+
+/************************************************************/
+/********************* all flat themes ***********************/
+/************************************************************/
+.crossrider-nofity-58582-ntf-content-theme-grey,
+.crossrider-nofity-58582-ntf-content-theme-cyan,
+.crossrider-nofity-58582-ntf-content-theme-orange,
+.crossrider-nofity-58582-ntf-content-theme-lime,
+.crossrider-nofity-58582-ntf-content-theme-navy,
+.crossrider-nofity-58582-ntf-content-theme-dark-grey,
+.crossrider-nofity-58582-ntf-content-theme-light-grey,
+.crossrider-nofity-58582-ntf-content-theme-light-cyan,
+.crossrider-nofity-58582-ntf-content-theme-peach,
+.crossrider-nofity-58582-ntf-content-theme-light-green,
+.crossrider-nofity-58582-ntf-content-theme-white-black,
+.crossrider-nofity-58582-ntf-content-theme-white-blue,
+.crossrider-nofity-58582-ntf-content-theme-white-darkred,
+.crossrider-nofity-58582-ntf-content-theme-white-lime {
+	position:relative;
+	direction:ltr;
+	text-align:left;
+	zoom:1;
+	font-family:Helvtica, Arial, sans-serif;
+	font-size:12px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	overflow: visible;
+}
+
+.crossrider-nofity-58582-ntf-content-theme-grey {
+	border:2px solid #4D4D4D;
+	background:#999999;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-cyan {
+	border:2px solid #40878E;
+	background:#78D2DA;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(46, 105, 119, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(46, 105, 119, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(46, 105, 119, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-orange {
+	border:2px solid #E33800;
+	background:#EA6339;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(147, 81, 34, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(147, 81, 34, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(147, 81, 34, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-lime {
+	border:2px solid #A0C40F;
+	background:#87B952;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(46, 117, 73, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(46, 117, 73, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(46, 117, 73, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-navy {
+	border:2px solid #738097;
+	background:#152B52;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(39, 81, 114, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(39, 81, 114, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(39, 81, 114, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-dark-grey {
+	border:2px solid #999999;
+	background:#4D4D4D;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-light-grey {
+	border:2px solid #4D4D4D;
+	background:#E6E6E6;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(73, 75, 77, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(73, 75, 77, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(73, 75, 77, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-light-cyan {
+	border:2px solid #40878E;
+	background:#D3EDF8;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(63, 105, 137, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(63, 105, 137, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(63, 105, 137, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-peach {
+	border:2px solid #E33800;
+	background:#FCF6F4;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(199, 89, 89, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(199, 89, 89, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(199, 89, 89, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-light-green {
+	border:2px solid #A0C40F;
+	background:#EBF3CF;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(70, 118, 57, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(70, 118, 57, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(70, 118, 57, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-white-black {
+	border:2px solid #000;
+	background:#fff;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(56, 56, 56, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-white-blue {
+	border:2px solid #2D3092;
+	background:#fff;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(35, 33, 92, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(35, 33, 92, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(35, 33, 92, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-white-darkred {
+	border:2px solid #C1272C;
+	background:#fff;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(94, 22, 31, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(94, 22, 31, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(94, 22, 31, 0.75);
+}
+
+.crossrider-nofity-58582-ntf-content-theme-white-lime {
+	border:2px solid #006837;
+	background:#fff;
+	 -webkit-box-shadow:0px 0px 12px 2px rgba(21, 95, 48, 0.75);
+    -moz-box-shadow:0px 0px 12px 2px rgba(21, 95, 48, 0.75);
+	box-shadow:0px 0px 12px 2px rgba(21, 95, 48, 0.75);
+}
+
+/* css hack for ie 7+8 - glow effect to emulate css3 box-shadow */
+@media \0screen\,screen\9 {
+	.crossrider-nofity-58582-ntf-content-theme-grey {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#383838', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-cyan {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#2E6977', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-orange {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#935122', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-lime {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#2E754C', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-navy {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#2E754C', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-dark-grey {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#383838', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-light-grey {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#494B4D', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-light-cyan {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#3F6989', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-peach {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#C75959', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-light-green {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#467639', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-white-black {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#383838', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-white-blue {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#23215C', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-white-darkred {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#5E161F', Strength='3');
+	}
+
+	.crossrider-nofity-58582-ntf-content-theme-white-lime {
+		filter:progid:DXImageTransform.Microsoft.Glow(color='#155F30', Strength='3');
+	}
+}
+
+/* css hack for ie 7 - it cuts the X (close) there for needs to be displayed within the ntf */
+@media screen\9 {
+	.crossrider-nofity-58582-ntf-content-theme-grey,
+	.crossrider-nofity-58582-ntf-content-theme-cyan,
+	.crossrider-nofity-58582-ntf-content-theme-orange,
+	.crossrider-nofity-58582-ntf-content-theme-lime,
+	.crossrider-nofity-58582-ntf-content-theme-navy,
+	.crossrider-nofity-58582-ntf-content-theme-dark-grey,
+	.crossrider-nofity-58582-ntf-content-theme-light-grey,
+	.crossrider-nofity-58582-ntf-content-theme-light-cyan,
+	.crossrider-nofity-58582-ntf-content-theme-peach,
+	.crossrider-nofity-58582-ntf-content-theme-light-green,
+	.crossrider-nofity-58582-ntf-content-theme-white-black,
+	.crossrider-nofity-58582-ntf-content-theme-white-blue,
+	.crossrider-nofity-58582-ntf-content-theme-white-darkred,
+	.crossrider-nofity-58582-ntf-content-theme-white-lime {
+		right:0px !important;
+		top:0px !important;
+	}
+}
+
+.crossrider-nofity-58582-ntf-content-theme-grey,
+.crossrider-nofity-58582-ntf-content-theme-grey *,
+.crossrider-nofity-58582-ntf-content-theme-navy,
+.crossrider-nofity-58582-ntf-content-theme-navy *,
+.crossrider-nofity-58582-ntf-content-theme-dark-grey,
+.crossrider-nofity-58582-ntf-content-theme-dark-grey * {
+	color:#FFF;
+}
+
+.crossrider-nofity-58582-ntf-content-theme-cyan,
+.crossrider-nofity-58582-ntf-content-theme-cyan *,
+.crossrider-nofity-58582-ntf-content-theme-orange,
+.crossrider-nofity-58582-ntf-content-theme-orange *,
+.crossrider-nofity-58582-ntf-content-theme-lime,
+.crossrider-nofity-58582-ntf-content-theme-lime *,
+.crossrider-nofity-58582-ntf-content-theme-light-grey,
+.crossrider-nofity-58582-ntf-content-theme-light-grey *,
+.crossrider-nofity-58582-ntf-content-theme-light-cyan,
+.crossrider-nofity-58582-ntf-content-theme-light-cyan *,
+.crossrider-nofity-58582-ntf-content-theme-peach,
+.crossrider-nofity-58582-ntf-content-theme-peach *,
+.crossrider-nofity-58582-ntf-content-theme-light-green,
+.crossrider-nofity-58582-ntf-content-theme-light-green *,
+.crossrider-nofity-58582-ntf-content-theme-white-black,
+.crossrider-nofity-58582-ntf-content-theme-white-black *,
+.crossrider-nofity-58582-ntf-content-theme-white-blue,
+.crossrider-nofity-58582-ntf-content-theme-white-blue *,
+.crossrider-nofity-58582-ntf-content-theme-white-darkred,
+.crossrider-nofity-58582-ntf-content-theme-white-darkred *,
+.crossrider-nofity-58582-ntf-content-theme-white-lime,
+.crossrider-nofity-58582-ntf-content-theme-white-lime * {
+	color:#000;
+}
+
+.crossrider-nofity-58582-header-theme-grey,
+.crossrider-nofity-58582-header-theme-cyan,
+.crossrider-nofity-58582-header-theme-orange,
+.crossrider-nofity-58582-header-theme-lime,
+.crossrider-nofity-58582-header-theme-navy,
+.crossrider-nofity-58582-header-theme-dark-grey,
+.crossrider-nofity-58582-header-theme-light-grey,
+.crossrider-nofity-58582-header-theme-light-cyan,
+.crossrider-nofity-58582-header-theme-peach,
+.crossrider-nofity-58582-header-theme-light-green,
+.crossrider-nofity-58582-header-theme-white-black,
+.crossrider-nofity-58582-header-theme-white-blue,
+.crossrider-nofity-58582-header-theme-white-darkred,
+.crossrider-nofity-58582-header-theme-white-lime {
+	height:22px;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+	
+	.crossrider-nofity-58582-icon-theme-grey,
+	.crossrider-nofity-58582-icon-theme-cyan,
+	.crossrider-nofity-58582-icon-theme-orange,
+	.crossrider-nofity-58582-icon-theme-lime,
+	.crossrider-nofity-58582-icon-theme-navy,
+	.crossrider-nofity-58582-icon-theme-dark-grey,
+	.crossrider-nofity-58582-icon-theme-light-grey,
+	.crossrider-nofity-58582-icon-theme-light-cyan,
+	.crossrider-nofity-58582-icon-theme-peach,
+	.crossrider-nofity-58582-icon-theme-light-green,
+	.crossrider-nofity-58582-icon-theme-white-black,
+	.crossrider-nofity-58582-icon-theme-white-blue,
+	.crossrider-nofity-58582-icon-theme-white-darkred,
+	.crossrider-nofity-58582-icon-theme-white-lime {
+		float:left;
+		width:50px;
+		height:50px;
+		margin-right:10px;
+		margin-bottom:10px;
+	}
+
+	.crossrider-nofity-58582-qmark-theme-grey,
+	.crossrider-nofity-58582-qmark-theme-cyan,
+	.crossrider-nofity-58582-qmark-theme-orange,
+	.crossrider-nofity-58582-qmark-theme-lime,
+	.crossrider-nofity-58582-qmark-theme-navy,
+	.crossrider-nofity-58582-qmark-theme-dark-grey,
+	.crossrider-nofity-58582-qmark-theme-light-grey,
+	.crossrider-nofity-58582-qmark-theme-light-cyan,
+	.crossrider-nofity-58582-qmark-theme-peach,
+	.crossrider-nofity-58582-qmark-theme-light-green,
+	.crossrider-nofity-58582-qmark-theme-white-black,
+	.crossrider-nofity-58582-qmark-theme-white-blue,
+	.crossrider-nofity-58582-qmark-theme-white-darkred,
+	.crossrider-nofity-58582-qmark-theme-white-lime {
+		float:left;
+		width:16px;
+		height:16px;
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/question-mark.gif');
+		margin:6px 6px 0px 6px;
+	}
+	
+	.crossrider-nofity-58582-title-theme-grey,
+	.crossrider-nofity-58582-title-theme-cyan,
+	.crossrider-nofity-58582-title-theme-orange,
+	.crossrider-nofity-58582-title-theme-lime,
+	.crossrider-nofity-58582-title-theme-navy,
+	.crossrider-nofity-58582-title-theme-dark-grey,
+	.crossrider-nofity-58582-title-theme-light-grey,
+	.crossrider-nofity-58582-title-theme-light-cyan,
+	.crossrider-nofity-58582-title-theme-peach,
+	.crossrider-nofity-58582-title-theme-light-green,
+	.crossrider-nofity-58582-title-theme-white-black,
+	.crossrider-nofity-58582-title-theme-white-blue,
+	.crossrider-nofity-58582-title-theme-white-darkred,
+	.crossrider-nofity-58582-title-theme-white-lime {
+		font-size:15px;
+		font-weight:bold;
+		width:auto;
+		margin-left:13px;
+	}
+	
+	/* close icon */
+	.crossrider-nofity-58582-close-theme-grey,
+	.crossrider-nofity-58582-close-theme-cyan,
+	.crossrider-nofity-58582-close-theme-orange,
+	.crossrider-nofity-58582-close-theme-lime,
+	.crossrider-nofity-58582-close-theme-navy,
+	.crossrider-nofity-58582-close-theme-dark-grey,
+	.crossrider-nofity-58582-close-theme-light-grey,
+	.crossrider-nofity-58582-close-theme-light-cyan,
+	.crossrider-nofity-58582-close-theme-peach,
+	.crossrider-nofity-58582-close-theme-light-green,
+	.crossrider-nofity-58582-close-theme-white-black,
+	.crossrider-nofity-58582-close-theme-white-blue,
+	.crossrider-nofity-58582-close-theme-white-darkred,
+	.crossrider-nofity-58582-close-theme-white-lime {
+		position:absolute;
+		right:-7px;
+		top:-7px;
+		width:25px;
+		height:25px;
+		font-weight:bold;
+		font-size:0px;
+		cursor:pointer;
+		line-height:12px;
+	}
+
+	.crossrider-nofity-58582-close-theme-grey,
+	.crossrider-nofity-58582-close-theme-dark-grey,
+	.crossrider-nofity-58582-close-theme-light-grey {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/grey.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-cyan,
+	.crossrider-nofity-58582-close-theme-light-cyan {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/cyan.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-orange,
+	.crossrider-nofity-58582-close-theme-peach{
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/orange.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-lime,
+	.crossrider-nofity-58582-close-theme-light-green {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/lime.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-navy,
+	.crossrider-nofity-58582-close-theme-white-blue {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/navy.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-white-black {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/black.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-white-darkred {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/darkred.close.png');
+	}
+
+	.crossrider-nofity-58582-close-theme-white-lime {
+		background:url('https://w9u6a2p6.ssl.hwcdn.net/plugins/images/notifications/flat/green.close.png');
+	}
+
+.crossrider-nofity-58582-body-theme-grey,
+.crossrider-nofity-58582-body-theme-cyan,
+.crossrider-nofity-58582-body-theme-orange,
+.crossrider-nofity-58582-body-theme-lime,
+.crossrider-nofity-58582-body-theme-navy,
+.crossrider-nofity-58582-body-theme-dark-grey,
+.crossrider-nofity-58582-body-theme-light-grey,
+.crossrider-nofity-58582-body-theme-light-cyan,
+.crossrider-nofity-58582-body-theme-peach,
+.crossrider-nofity-58582-body-theme-light-green,
+.crossrider-nofity-58582-body-theme-white-black,
+.crossrider-nofity-58582-body-theme-white-blue,
+.crossrider-nofity-58582-body-theme-white-darkred,
+.crossrider-nofity-58582-body-theme-white-lime {
+	clear:both;
+	padding:10px;
+	padding-top:6px;
+	min-height:50px;
+}
+
+.crossrider-nofity-58582-tooltip-theme-grey,
+.crossrider-nofity-58582-tooltip-theme-cyan,
+.crossrider-nofity-58582-tooltip-theme-orange,
+.crossrider-nofity-58582-tooltip-theme-lime,
+.crossrider-nofity-58582-tooltip-theme-navy,
+.crossrider-nofity-58582-tooltip-theme-dark-grey,
+.crossrider-nofity-58582-tooltip-theme-light-grey,
+.crossrider-nofity-58582-tooltip-theme-light-cyan,
+.crossrider-nofity-58582-tooltip-theme-peach,
+.crossrider-nofity-58582-tooltip-theme-light-green,
+.crossrider-nofity-58582-tooltip-theme-white-black,
+.crossrider-nofity-58582-tooltip-theme-white-blue,
+.crossrider-nofity-58582-tooltip-theme-white-darkred,
+.crossrider-nofity-58582-tooltip-theme-white-lime {
+	display:none;
+	position:absolute;
+	background:#F2F2F2;
+	border:2px solid #848484;
+	padding:8px;
+	width:80%;
+	top:0px;
+	left:0px;
+	color:#666;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	cursor:default;
+}
+
+	.crossrider-nofity-58582-tooltip-theme-grey button,
+	.crossrider-nofity-58582-tooltip-theme-cyan button,
+	.crossrider-nofity-58582-tooltip-theme-orange button,
+	.crossrider-nofity-58582-tooltip-theme-lime button,
+	.crossrider-nofity-58582-tooltip-theme-navy button,
+	.crossrider-nofity-58582-tooltip-theme-dark-grey button,
+	.crossrider-nofity-58582-tooltip-theme-light-grey button,
+	.crossrider-nofity-58582-tooltip-theme-light-cyan button,
+	.crossrider-nofity-58582-tooltip-theme-peach button,
+	.crossrider-nofity-58582-tooltip-theme-light-green button,
+	.crossrider-nofity-58582-tooltip-theme-white-black button,
+	.crossrider-nofity-58582-tooltip-theme-white-blue button,
+	.crossrider-nofity-58582-tooltip-theme-white-darkred button,
+	.crossrider-nofity-58582-tooltip-theme-white-lime button {
+		float:right;
+		cursor:pointer;
+	}</style></head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <script type="text/javascript">
+
+function list__book(){
+
+var temp = httpGet('/list_book');
+temp = JSON.parse(temp);
+console.log(temp);
+
+var book_dom = '<table class="table">';
+var tmp = '';
+for(book in temp){
+
+	tmp = tmp + '<tr><td>' + temp[book] + '</td></tr>';
+}
+
+book_dom = book_dom + tmp + '</table';
+document.getElementById('book_listings').innerHTML += book_dom;
+}
+
+
+    </script>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">Performance</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Book Libray</a></li>
+            
+            <li class="dropdown">
+              <a href="http://getbootstrap.com/examples/sticky-footer-navbar/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://getbootstrap.com/examples/sticky-footer-navbar/#">Action</a></li>
+                <li><a href="http://getbootstrap.com/examples/sticky-footer-navbar/#">Another action</a></li>
+                <li><a href="http://getbootstrap.com/examples/sticky-footer-navbar/#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="http://getbootstrap.com/examples/sticky-footer-navbar/#">Separated link</a></li>
+                <li><a href="http://getbootstrap.com/examples/sticky-footer-navbar/#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+
+
+
+    <div class="container">
+<h1>CPU data</h1>
+
+
+      <table id="cpudata" class="table">
+
+      </table>
+            	<hr/>
+
+      <h1>Book Store</h1>
+     <div class="row">
+     	<div id="book_listings" class="col-sm-4">
+     	<a id="listbook" href="" onclick="list__book();">List</a>
+
+     	</div>
+		<div class="col-sm-4">
+		<input id="book_name" type="text" />
+
+		<a id ="addbook" href=""> Create</a></div>
+		<div class="col-sm-4">
+		<input id="book_name_del" type="text" />
+		<a id="deletebook" href="">Delete</a></div>
+     </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Color changing footer.</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+      
+
+
+
+      <script type="text/javascript">
+
+
+    function httpGet(theUrl)
+{
+    var xmlHttp = null;
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+
+
+
+$(document).ready(function(){
+
+$('#addbook').click(function(){
+
+var book_name = document.getElementById('book_name').value;
+var url = "/addbook?book_name=" + book_name;
+var temp = httpGet(url);
+console.log(temp);
+});
+
+});
+
+
+$(document).ready(function(){
+
+
+
+
+$('#deletebook').click(function(){
+var book_name = document.getElementById('book_name_del').value;
+var url = "/deletebook?book_name=" + book_name;
+var temp = httpGet(url);
+console.log(temp);
+});
+
+});
+
+
+function cpu_data(){
+
+var temp = httpGet('/cpu');
+obj = JSON.parse(temp);
+//alert('{{details}}');
+console.log(obj);
+var dom='';
+for(i in obj){
+ dom = dom + '<tr class=""><td class="">'
+		+ i + '</td><td class="">'
+		+obj[i] + '</td></tr>'
+
+}
+
+document.getElementById("cpudata").innerHTML= dom;
+    }
+
+
+</script>
+
+    <script type="text/javascript">
+
+
+
+$(document).ready(function(){
+
+
+var array = ["white", "blue", "yellow", "green"];
+
+var counter = 0;
+var nextColor;
+
+function  bgchange() {
+    console.log (counter);
+    counter = (counter + 1) % array.length;
+    nextColor = array[counter];
+
+    $(".footer").css("background-color", nextColor);
+
+}
+
+
+    setInterval(bgchange, 5000)
+
+
+});
+
+$(document).ready(function(){
+
+cpu_data();
+setInterval(cpu_data, 5000);
+list__book();
+});
+
+
+  </script>
+
+<div class="crossrider-nofity-58582" index="0"></div><div class="crossrider-nofity-58582-top-left"></div><div class="crossrider-nofity-58582-top-right"></div><div class="crossrider-nofity-58582-bottom-left"></div><div class="crossrider-nofity-58582-bottom-right"></div></body></html>
