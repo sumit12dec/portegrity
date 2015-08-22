@@ -1,4 +1,4 @@
-iBeaker==1.7.0
+Beaker
 Flask==0.10.1
 itsdangerous==0.24
 Jinja2==2.8
